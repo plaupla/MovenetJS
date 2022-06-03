@@ -261,6 +261,7 @@ const onUserMedia = () => {
                     style={{visibility: "hidden"}}
                     ref={webcamRef}
                     audio={false}
+                    position={absolute}
                     height={640}
                     width={480}
                     videoConstraints={VIDEO_CONSTRAINTS}
@@ -268,6 +269,7 @@ const onUserMedia = () => {
                     onUserMedia={onUserMedia}/>
       {/* <Webcam style={{position:"absolute", marginLeft:"auto", marginRight:"auto",left:0, right:0, textAlign:"center",zIndex:9, width:640, height:488} } ></Webcam>
       <canvas style={{position:"absolute", marginLeft:"auto", marginRight:"auto",left:0, right:0, textAlign:"center",zIndex:9, width:640, height:488}} ></canvas> */}
+       <canvas className="absolute" id="output-full-screen"/>
       <label className="text-white">FPS: {displayFps}</label> 
      </header> 
     </div>
